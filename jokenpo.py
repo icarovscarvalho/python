@@ -23,7 +23,7 @@ while True:
     cont = 0
 
     for palavra in group:
-        #sleep(1)
+        # sleep(1)
         print(f'{" "*(cont * 15)}{yellow}{group[cont]}{end_color}...')
         cont += 1
         if cont >= 3:
@@ -47,30 +47,38 @@ while True:
             if pc == 'Pedra':
                 print('_' * 40)
                 if player == 'Pedra':
-                    print(f'Ambos jogaram {yellow}Pedra{end_color}. Deu {yellow}EMPATE{end_color}')
+                    print(
+                        f'Ambos jogaram {yellow}Pedra{end_color}. Deu {yellow}EMPATE{end_color}')
                 elif player == 'Papel':
-                    print(f'{yellow}Pedra{end_color} perde de {yellow}Papel{end_color}. Você {yellow}GANHOU{end_color}')
+                    print(
+                        f'{yellow}Pedra{end_color} perde de {yellow}Papel{end_color}. Você {yellow}GANHOU{end_color}')
                 else:
-                    print(f'{yellow}Pedra{end_color} ganha de {yellow}Tesoura{end_color}. Você {yellow}PERDEU{end_color}')
+                    print(
+                        f'{yellow}Pedra{end_color} ganha de {yellow}Tesoura{end_color}. Você {yellow}PERDEU{end_color}')
 
             elif pc == 'Papel':
                 print('_' * 40)
                 if player == 'Papel':
-                    print(f'Ambos jogaram {yellow}Papel{end_color}. Deu {yellow}EMPATE{end_color}')
+                    print(
+                        f'Ambos jogaram {yellow}Papel{end_color}. Deu {yellow}EMPATE{end_color}')
                 elif player == 'Tesoura':
-                    print(f'{yellow}Papel{end_color} perde de {yellow}Tesoura{end_color}. Você {yellow}GANHOU{end_color}')
+                    print(
+                        f'{yellow}Papel{end_color} perde de {yellow}Tesoura{end_color}. Você {yellow}GANHOU{end_color}')
                 else:
-                    print(f'{yellow}Papel{end_color} ganha de {yellow}Pedra{end_color}. Você {yellow}PERDEU{end_color}')
+                    print(
+                        f'{yellow}Papel{end_color} ganha de {yellow}Pedra{end_color}. Você {yellow}PERDEU{end_color}')
 
             else:
                 print('_' * 40)
                 if player == 'Tesoura':
-                    print(f'Ambos jogaram {yellow}Tesoura{end_color}. Deu {yellow}EMPATE{end_color}')
+                    print(
+                        f'Ambos jogaram {yellow}Tesoura{end_color}. Deu {yellow}EMPATE{end_color}')
                 elif player == 'Tesoura':
                     print(
                         f'{yellow}Tesoura{end_color} perde de {yellow}Pedra{end_color}. Você {yellow}GANHOU{end_color}')
                 else:
-                    print(f'{yellow}Tesoura{end_color} ganha de {yellow}Papel{end_color}. Você {yellow}PERDEU{end_color}')
+                    print(
+                        f'{yellow}Tesoura{end_color} ganha de {yellow}Papel{end_color}. Você {yellow}PERDEU{end_color}')
             pass
 
         line()
