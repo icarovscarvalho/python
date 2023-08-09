@@ -1,34 +1,68 @@
-bubasauro = {'numero': 1, 'tipo': 'planta', 'poder': 'veneno', 'fraqueza': (
-    'fogo', 'psiquico', 'gelo', 'voador'), 'primeira_evolucao:': 'bubasauro', 'segunda_evolucao': 'ivysauro', 'terceira_evolucao': 'venossauro'}
+pokemons = {'pikachu': {'nome': 'pikachu',
+                        'tipo': 'eletrico'},
+            '24': {'nome': 'pikachu',
+                   'tipo': 'eletrico'},
 
-ivysauro= {'numero': 2, 'tipo': 'planta', 'poder': 'veneno', 'fraqueza': (
-    'fogo', 'psiquico', 'gelo', 'voador'), 'primeira_evolucao:': 'bubasauro', 'segunda_evolucao': 'ivysauro', 'terceira_evolucao': 'venossauro'}
+            'eevee': {'nome': 'eevee',
+                      'tipo': 'normal'}
+            }
 
-venosauro= {'numero': 3, 'tipo': 'planta', 'poder': 'veneno', 'fraqueza': (
-    'fogo', 'psiquico', 'gelo', 'voador'), 'primeira_evolucao:': 'bubasauro', 'segunda_evolucao': 'ivysauro', 'terceira_evolucao': 'venossauro'}
+bubasauro = {'numero': 1,
+             'nome': 'bubasauro',
+             'tipo': ('planta', 'veneno'),
+             'fraqueza': ('fogo', 'psiquico', 'gelo', 'voador'),
+             'primeira_evolucao:': 'bubasauro',
+             'segunda_evolucao': 'ivysauro',
+             'terceira_evolucao': 'venossauro'}
 
-charmander= {'numero': 4, 'tipo': 'fogo', 'poder': 'fogo', 'fraqueza': (
-    'agua', 'terrestre', 'pedra'), 'primeira_evolucao:': 'charmander', 'segunda_evolucao': 'charmeleon', 'terceira_evolucao': 'charizard'}
+ivysauro = {'numero': 2,
+            'tipo': ('planta', 'veneno'),
+            'fraqueza': ('fogo', 'psiquico', 'gelo', 'voador'),
+            'primeira_evolucao:': 'bubasauro',
+            'segunda_evolucao': 'ivysauro',
+            'terceira_evolucao': 'venossauro'}
 
-charmander= {'numero': 4, 'tipo': 'fogo', 'poder': 'fogo', 'fraqueza': (
-    'agua', 'terrestre', 'pedra'), 'primeira_evolucao:': 'charmander', 'segunda_evolucao': 'charmeleon', 'terceira_evolucao': 'charizard'}
+venosauro = {'numero': 3,
+             'tipo': ('planta', 'veneno'),
+             'fraqueza': ('fogo', 'psiquico', 'gelo', 'voador'),
+             'primeira_evolucao:': 'bubasauro',
+             'segunda_evolucao': 'ivysauro',
+             'terceira_evolucao': 'venossauro'}
 
-charmeleon= {'numero': 5, 'tipo': 'fogo', 'poder': 'fogo', 'fraqueza': (
-    'agua', 'terrestre', 'pedra'), 'primeira_evolucao:': 'charmander', 'segunda_evolucao': 'charmeleon', 'terceira_evolucao': 'charizard'}
+charmander = {'numero': 4,
+              'tipo': 'fogo',
+              'fraqueza': ('agua', 'terrestre', 'pedra'),
+              'primeira_evolucao:': 'charmander',
+              'segunda_evolucao': 'charmeleon',
+              'terceira_evolucao': 'charizard'}
 
-charizard= {'numero': 6, 'tipo': 'fogo', 'poder': 'fogo', 'fraqueza': (
-    'agua', 'terrestre', 'pedra'), 'primeira_evolucao:': 'charmander', 'segunda_evolucao': 'charmeleon', 'terceira_evolucao': 'charizard'}
+charmeleon = {'numero': 5,
+              'tipo': 'fogo',
+              'fraqueza': ('agua', 'terrestre', 'pedra'),
+              'primeira_evolucao:': 'charmander',
+              'segunda_evolucao': 'charmeleon',
+              'terceira_evolucao': 'charizard'}
 
-pokemons = [bubasauro,ivysauro,venosauro,charmander,charmeleon,charizard]
+charizard = {'numero': 6,
+             'tipo': 'fogo',
+             'fraqueza': ('agua', 'terrestre', 'pedra'),
+             'primeira_evolucao:': 'charmander',
+             'segunda_evolucao': 'charmeleon',
+             'terceira_evolucao': 'charizard'}
 
-print(pokemons[bubasauro]['numero'])
+busca = input(f'Escolha um pokemon ou digite o ID: ')
+print(busca)
+if busca in pokemons:
+    print(pokemons.get(busca))
 
-# print(bubasauro['tipo'])
-# print(pokemons[0])
+# busca = input('Escolha um pokemon: ')
+# print(busca)
+# if busca in pokemons:
+#     for i in pokemons.get(busca):
+#         print(pokemons.get(i))
 
-# print(bubasauro.values()) - Verificar os valores dentro da biblioteca
-# print(bubasauro.keys()) - Verifica as categorias dentro da biblioteca
-# print(bubasauro.itens()) - Verifica ambos grupos dentro da biblioteca
-
-#for k,v in filme.itens(): - Para cada key in values
-    #print(f'O {numero} é {1}) - Escreva isto
+# busca = input('Escolha um pokemon: ')
+# print(busca)
+# if busca in pokemons:
+#     for i in pokemons:
+#         print(pokemons.get(i))
